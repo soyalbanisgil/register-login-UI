@@ -1,0 +1,180 @@
+:root {
+    --primary: #D35400;
+    --secondary: #2980B9;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+#signup {
+    transition: all .5s ease-in-out;
+}
+
+#login {
+    transition: all .5s ease-in-out;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.reg-img {
+    background-color: var(--primary);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.reg-img img {
+    width: 60%;
+}
+
+.reg-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-right: 2.5rem;
+}
+
+.reg-form h2 {
+    font-size: 2.5rem;
+    line-height: 1.7em;
+    margin: 0;
+}
+
+.reg-form label:nth-child(11) {
+    font-size: .7rem;
+}
+
+input[type=text], input[type=email], input[type=password]  {
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid rgba(0,0,0,.2);
+    padding: 10px 5px;
+    border-radius: 25px;;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+}
+
+small {
+    color: red;
+    margin-top: 0;
+    margin-bottom: 50px;
+    visibility: hidden;
+    font-weight: bold;
+}
+
+small.visible {
+    visibility: visible;
+}
+
+small.success {
+    visibility: visible;
+    color: teal;;
+}
+
+.btn {
+    background: var(--primary);
+    border: none;
+    color: #fff;
+    margin-top: 30px;
+    width: 150px;
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color: #000;
+}
+
+#clickLog {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.log-img {
+    background-color: var(--secondary);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.log-img img {
+    width: 60%;
+}
+
+.log-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 2.5rem;
+}
+
+.log-form h2 {
+    font-size: 2.5rem;
+    line-height: 1.7em;
+    margin: 0;
+}
+
+.log-form form {
+    width: 100%;
+    max-width: 400px;
+}
+
+.log-form .btn {
+    background-color: var(--secondary);
+}
+
+.log-form .btn:hover{
+    background-color: #000;
+}
+
+/*Mobile Styles*/
+@media screen and (max-width: 620px) {
+    .grid {
+        grid-template-columns: 1fr;
+        margin: 0 20px;
+    }
+    .reg-img, .log-img {
+        display: none;
+    }
+    .reg-form, .log-form {
+        height: 100vh;
+    }
+    .log-form {
+        margin-left: 0;
+    }
+}
+
+/*SUCCESS LOGIN*/
+.success {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.success img {
+    width: 25%;
+}

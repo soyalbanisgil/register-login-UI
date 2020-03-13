@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./animate.css">
+    <title>Register</title>
+</head>
+<body>
+    <div id="signup" class="grid">
+        <div class="reg-img">
+            <img class="animated slideInLeft delay-0.5s" src="./img/register.svg" alt="">
+        </div>
+        <div class="reg-form animated slideInRight delay-0.5s">
+            <h2>Register</h2>
+            <p>Please fill in this form to create your account.</p>
+            <form>
+                <label>Your Name:</label>
+                <input type="text"class="userName">
+                <br>
+                <label>Your Email:</label>
+                <input type="text">
+                <br>
+                <label>Password:</label>
+                <input type="text">
+                <br>
+                <input type="checkbox">
+                <label>By clicking "REGISTER" you agree to all Terms and Conditions.</label>
+                <br>
+                <button class="btn">Register</button>
+            </form>
+            <p>Already have an account? <a href="#login" id="clickLog"><b>Login</b></a> </p>
+        </div>
+    </div>
+
+    <div id="login" class="grid">
+        <div class="log-form">
+            <h2>Login</h2>
+            <p>Please fill in this form to login into your account.</p>
+            <form id="logForm">
+                <label>Your Email:</label>
+                <input type="email" name="email" id="logEmail" placeholder="Enter Email">
+                <small>Error message</small>
+                <br>
+                <label>Password:</label>
+                <input type="password" name="pass" id="logPass" placeholder="Enter PassWord">
+                <small>Error message</small>
+                <br>
+                <button id="logBtn" class="btn">Login</button>
+            </form>
+            <p>New here? <a href="#signup" id="click-signup"><b>Register</b></a> </p>
+        </div>
+        <div class="log-img">
+            <img src="./img/login.svg" alt="">
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
